@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 06</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <script>
+        const ruang = {
+            panjang: 20,
+            lebar: 30,
+            tinggi: 50,
+            volume: function() {
+                let vol; vol = this.panjang*this.lebar*this.tinggi;
+                return vol;
+            }
+        }
+        document.write("Volume ruang: " + ruang.volume());
+        document.write("<br>Panjang: " + ruang.panjang);
+    </script>
+</body>
+</html>

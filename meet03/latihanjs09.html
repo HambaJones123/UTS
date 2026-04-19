@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 09</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <a href="index.html">Kembali</a>
+    <br>
+    <input type="text" id="isi">
+    <br>
+    <button id="btn">Klik</button>
+    <script>
+        let btn1 = document.getElementById("btn");
+        let isi1 = document.getElementById("isi");
+        btn1.addEventListener("click", function() {
+            window.alert("Tes");
+        });
+        isi1.addEventListener("keydown", function(event) {
+            if (event.code === "Enter") {
+                isi1.value = "Kamu Enter ya";
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet 04</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <br>
+    <button id="btnThemeSwitch" onclick="toggleTheme()">Aktifkan Dark Mode</button>
+    <h1> Daftar Latihan Pemrograman Web Pertemuan 4 </h1>
+    <p><a href="tugas04.html"> Tugas Pertemuan 4</a></p>
+    <p><a href="tugasprak04.html"> Tugas Praktikum Pertemuan 4</a></p>
+    <p><a href="../index.html"> Kembali </a></p>
+
+    <script>
+        function toggleTheme() {
+            var element = document.body;
+            element.classList.toggle("darkmode");
+
+            var btn = document.getElementById("btnThemeSwitch");
+            if (element.classList.contains("darkmode")) {
+                btn.textContent = "Nonaktifkan Dark Mode";
+            } else {
+                btn.textContent = "Aktifkan Dark Mode";
+            }
+        }
+    </script>
+</body>
+</html>

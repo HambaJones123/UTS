@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 06</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <script>
+        class bidang {
+            panjang;
+            lebar;
+            constructor(p, l) {
+                this.panjang = p;
+                this.lebar = l;
+            }
+            luas() {
+                let l = this.panjang*this.lebar;
+                return l;
+            }
+            volume() {
+                let vol; vol = this.panjang*this.lebar*this.tinggi;
+                return vol;
+            }
+        }
+        class ruang {
+            panjang = 20;
+            lebar = 30;
+            tinggi = 50;
+            volume() {
+                let vol; vol = this.panjang*this.lebar*this.tinggi;
+                return vol;
+            }
+        }
+        x = new ruang();
+        document.writeln("Volume ruang: " + x.volume()+"<br>");
+        document.writeln("<br>Panjang: " + x.panjang+"<br>");
+        y = new bidang(3, 5);
+        document.writeln("<br>Panjang bidang: " + y.panjang+"<br>");
+        document.writeln("<br>Lebar bidang: " + y.lebar+"<br>");
+        document.writeln("<br>Luas bidang: " + y.luas()+"<br>");
+    </script>
+</body>
+</html>

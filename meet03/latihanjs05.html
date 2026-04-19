@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 03</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<br>
+    <a href="index.html">Kembali</a>
+<h1>Latihan JavaScript 05</h1>
+<h2>Perhitungan dengan function</h2>
+    <label>Nilai 1:</label>
+    <br>
+    <input type="number" id="nilai1" style="margin-bottom: 10px;">
+    <br>
+    <label>Nilai 2:</label>
+    <br>
+    <input type="number" id="nilai2" style="margin-bottom: 20px;">
+    <br>
+    <button type="button" onclick="myFunction(1)">Tambah</button>
+    <button type="button" onclick="myFunction(2)" style="margin-bottom: 20px;">Kurang</button>
+    <br>
+    <button type="button" onclick="myFunction(3)">Kali</button>
+    <button type="button" onclick="myFunction(4)">Bagi</button>
+    <br>
+    <input type="text" name="hasil" id="hasil" readonly style="margin-top: 20px;"></input>
+</body>
+<script>
+    let x; let y; let z;
+    function tambah(a, b) {
+        z = a + b; return z;
+    }
+    
+    function kurang(a, b) {
+        z = a - b; return z;
+    }
+
+    function kali(a, b) {
+        z = a * b; return z;
+    }
+
+    function bagi(a, b) {
+        z = a / b; return z;
+    }
+
+    function myFunction(pilihan) {
+        x = Number(document.getElementById("nilai1").value);
+        y = Number(document.getElementById("nilai2").value);
+        if (pilihan == 1) {
+            document.getElementById("hasil").value = tambah(x, y);
+            console.log("Hasil penjumlahan: " + z);
+        } else if (pilihan == 2) {
+            document.getElementById("hasil").value = kurang(x, y);
+            console.log("Hasil pengurangan: " + z);
+        } else if (pilihan == 3) {
+            document.getElementById("hasil").value = kali(x, y);
+            console.log("Hasil perkalian: " + z);
+        } else if (pilihan == 4) {
+            document.getElementById("hasil").value = bagi(x, y);
+            console.log("Hasil pembagian: " + z);
+        }
+    }
+
+</script>
+</html>

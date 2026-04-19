@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet 04</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <br>
+    <button id="btnThemeSwitch" onclick="toggleTheme()">Aktifkan Dark Mode</button>
+    <button id="btnAddNewLine" onclick="newLine()">Tambah Baris Baru</button>
+    <h1> Daftar Latihan Pemrograman Web Pertemuan 4 </h1>
+    <p><a href="latihanjs01.html"> Latihan JavaScript 01 </a></p>
+    <p><a href="latihanjs02.html"> Latihan JavaScript 02 </a></p>
+    <p><a href="latihanjs03.html"> Latihan JavaScript 03 </a></p>
+    <p><a href="latihanjs05.html"> Latihan JavaScript 05 </a></p>
+    <p><a href="latihanjs06.html"> Latihan JavaScript 06 </a></p>
+    <p><a href="latihanjs07.html"> Latihan JavaScript 07 </a></p>
+    <p><a href="latihanjs08.html"> Latihan JavaScript 08 </a></p>
+    <p><a href="latihanjs09.html"> Latihan JavaScript 09 </a></p>
+    <p><a href="tugasNo3.html"> Tugas JS Nomor 3</a></p>
+    <p><a href="../index.html"> Kembali </a></p>
+
+    <script>
+        function toggleTheme() {
+            var element = document.body;
+            element.classList.toggle("darkmode");
+
+            var btn = document.getElementById("btnThemeSwitch");
+            if (element.classList.contains("darkmode")) {
+                btn.textContent = "Nonaktifkan Dark Mode";
+            } else {
+                btn.textContent = "Aktifkan Dark Mode";
+            }
+        }
+
+        function newLine() {
+            var newParagraph = document.createElement("p");
+            newParagraph.textContent = "Baris baru telah ditambahkan!";
+            document.body.appendChild(newParagraph);
+        }
+    </script>
+</body>
+</html>

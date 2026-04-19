@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Latihan jQuery</title>
+</head>
+
+<body>
+    <h1>Belajar jQuery: Kalkulator</h1>
+    <!-- <p id="warna1">Ubah warna 1</p>
+    <p class="warna2">Ubah warna 2</p>
+    <p id="hilang">Ubah warna 3</p> -->
+
+    <input type="number" id="nilai1">
+    <input type="number" id="nilai2">
+    <div id="isi" style="margin-top: 20px;"></div>
+    <div class="button" style="margin-top: 20px;">
+        <button id="btnJumlah">+</button>
+        <button id="btnKurang">-</button>
+        <button id="btnKali">*</button>
+        <button id="btnBagi">:</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            /* $("#nilai").keypress(function () {
+                let x = $("#nilai").val();
+                $("#isi").text(x);*/
+
+
+        });
+        $("#btnJumlah").click(function () {
+            let x1 = $("#nilai1").val();
+            console.log(x1);
+            let x2 = $("#nilai2").val();
+            console.log(x2);
+            let z = parseFloat(x1) + parseFloat(x2);
+            $("#isi").text("Hasilnya adalah: " + z);
+
+
+            /* $("#warna1").css("color", "red");
+            $(".warna2").css("color", "blue");
+            $("#hilang").hide();*/
+        });
+
+        $("#btnKurang").click(function () {
+            let x1 = $("#nilai1").val();
+            console.log(x1);
+            let x2 = $("#nilai2").val();
+            console.log(x2);
+            let z = parseFloat(x1) - parseFloat(x2);
+            $("#isi").text("Hasilnya adalah: " + z);
+        });
+
+        $("#btnKali").click(function () {
+            let x1 = $("#nilai1").val();
+            console.log(x1);
+            let x2 = $("#nilai2").val();
+            console.log(x2);
+            let z = parseFloat(x1) * parseFloat(x2);
+            $("#isi").text("Hasilnya adalah: " + z);
+        });
+
+        $("#btnBagi").click(function () {
+            let x1 = $("#nilai1").val();
+            console.log(x1);
+            let x2 = $("#nilai2").val();
+            console.log(x2);
+            let z = parseFloat(x1) / parseFloat(x2);
+            $("#isi").text("Hasilnya adalah: " + z);
+        });
+    </script>
+</body>
+
+</html>

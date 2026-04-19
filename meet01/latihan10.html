@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs and Spans</title>
+
+    <style>
+        .container { background: #f8f9fa; padding: 20px; margin: 10px }
+        .highlight { background: yellow; }
+        .important { color: red; font-weight: bold; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Understanding Divs and Spans </h1>
+    <div class="container">
+        <h2> This is a div container </h2>
+        <p> Divs are <span class="important" >block-level</span> elements used to group content. </p>
+        <p> They take up the <span class="highlight">full width</span> of their parent container. </p>
+    </div>
+
+    <div class="container">
+        <h2> This is another div container </h2>
+        <p> Spans are <span class="important">inline</span> elements used to style parts of text. </p>
+        <p> They only take up <span class="highlight">as much width as necessary</span>. </p>
+    </div>
+
+    <p> You can have <span style="color: blue;">multiple spans</span> in <span style="color: pink;">one paragraph</span> without breaking the line. </p>
+</body>
+</html>
