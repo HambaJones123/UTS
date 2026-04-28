@@ -10,12 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
 </head>
 <body>
-    <nav class = "navbar navbar-expand-sm bg-success navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <button class="nav-link btn" id="dashboard">Dashboard</button>
-      </li>
+  <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <button class="nav-link btn" id="dashboard">Dashboard</button>
+        </li>
      <li class="nav-item">
         <button class="nav-link btn" id="penjualan">Penjualan</button>
       </li>
