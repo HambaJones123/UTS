@@ -126,7 +126,7 @@
 
 </div>
 
-
+<!-- The Modal: jendela pop-up yang muncul saat tombol "Klik Pilih barang" diklik -->
 <div class="modal fade" id="masteritem">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">

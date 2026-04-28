@@ -134,45 +134,45 @@
           <table class="table">
             <thead>
               <tr>
-                <th>Action</th>
                 <th>Kode</th>
                 <th>Nama</th>
                 <th>Satuan</th>
                 <th>Harga</th>
+                <th class="text-center">Action</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><button class="btn btn-success" data-bs-dismiss="modal"
-                    onclick="memilih('M01','Indomie Goreng', 'Kardus','100000')">Pilih</button></td>
                 <td>M01</td>
                 <td>Indomie Goreng</td>
                 <td>Kardus</td>
                 <td>100000</td>
+                <td class="text-center"><button class="btn btn-success" data-bs-dismiss="modal"
+                    onclick="memilih('M01','Indomie Goreng', 'Kardus','100000')">Pilih</button></td>
               </tr>
               <tr>
-                <td><button class="btn btn-success" data-bs-dismiss="modal"
-                    onclick="memilih('M02','Indomie Soto', 'Kardus' ,'105000')">Pilih</button></td>
                 <td>M02</td>
                 <td>Indomie Soto</td>
                 <td>Kardus</td>
                 <td>105000</td>
+                <td class="text-center"><button class="btn btn-success" data-bs-dismiss="modal"
+                    onclick="memilih('M02','Indomie Soto', 'Kardus' ,'105000')">Pilih</button></td>
               </tr>
               <tr>
-                <td><button class="btn btn-success" data-bs-dismiss="modal"
-                    onclick="memilih('M03','Indomie Kare Ayam','Kardus','105000')">Pilih</button></td>
                 <td>M03</td>
                 <td>Indomie Kare Ayam</td>
                 <td>Kardus</td>
                 <td>105000</td>
+                <td class="text-center"><button class="btn btn-success" data-bs-dismiss="modal"
+                    onclick="memilih('M03','Indomie Kare Ayam','Kardus','105000')">Pilih</button></td>
               </tr>
               <tr>
-                <td><button class="btn btn-success" data-bs-dismiss="modal"
-                    onclick="memilih('M04','Indomie Tori Miso', 'Kardus','110000')">Pilih</button></td>
                 <td>M04</td>
                 <td>Indomie Tori Miso</td>
                 <td>Kardus</td>
                 <td>110000</td>
+                <td class="text-center"><button class="btn btn-success" data-bs-dismiss="modal"
+                    onclick="memilih('M04','Indomie Tori Miso', 'Kardus','110000')">Pilih</button></td>
               </tr>
             </tbody>
           </table>
