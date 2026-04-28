@@ -90,12 +90,13 @@
       <table class="table table-bordered table-sm">
         <tbody>
           <tr>
-            <th class="align-middle px-3">Total</th>
-            <td colspan="2" id="displayTotal" class="text-end align-middle px-3 fw-bold">0</td>
+            <th class="align-middle px-3" style="width: 40%;">Total</th>
+            <td colspan="2" id="displayTotal" class="text-end px-3 align-middle fw-bold">0</td>
           </tr>
+
           <tr>
             <th class="align-middle px-3">Diskon</th>
-            <td style="width: 20%;">
+            <td style="width: 30%;">
               <div class="input-group input-group-sm">
                 <input type="number" id="diskon" class="form-control text-end" placeholder="0" min="0" max="100">
                 <span class="input-group-text">%</span>
@@ -103,6 +104,7 @@
             </td>
             <td id="displayDiskon" class="text-end px-3 align-middle text-danger">0</td>
           </tr>
+
           <tr class="table-light">
             <th class="align-middle px-3 fs-6">Grand Total</th>
             <td colspan="2" id="displayGrandTotal" class="text-end px-3 align-middle fw-bold fs-5 text-success">0</td>
@@ -111,6 +113,7 @@
       </table>
     </div>
   </div>
+
 </div>
 
 
