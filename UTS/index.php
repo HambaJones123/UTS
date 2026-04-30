@@ -13,7 +13,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-success navbar-dark sticky-top shadow">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand fw-bold" href="#">POS 24410100063</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
