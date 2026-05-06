@@ -16,8 +16,8 @@
           <input type="number" class="form-control" id="hp" placeholder="08xxx">
         </div>
         <div class="col-md-3">
-          <label for="keterangan" class="form-label fw-bold">Keterangan</label>
-          <input type="text" class="form-control" id="keterangan" placeholder="Opsional">
+          <label for="waktu" class="form-label fw-bold">Waktu</label>
+          <input type="time" class="form-control" id="waktu" placeholder="time">
         </div>
       </form>
     </div>
